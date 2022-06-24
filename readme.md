@@ -1,8 +1,10 @@
 # Toy Token Contract
 
-Toy Token contract that utilizes [OpenZeppelin's ERC20, ERC20SnapShot, and Ownable](https://docs.openzeppelin.com/contracts/2.x/api/token/erc20) for modern ERC20 token implementation. It defines `takeSnapshot`. Which can use to take snapshot of account balances for voting purpose.
+Toy Token contract that utilizes [OpenZeppelin's ERC20, ERC20SnapShot, and Ownable](https://docs.openzeppelin.com/contracts/2.x/api/token/erc20) for modern ERC20 token implementation. It defines `takeSnapshot`. Which can use to take snapshot of account balances and totalSupply for voting purpose.
 
 ## Test
+`clone the repo`
+
 To run the test, run
 
 `forge test`
