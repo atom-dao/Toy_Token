@@ -5,7 +5,8 @@ Toy Token contract that utilizes [OpenZeppelin's ERC20, ERC20SnapShot, and Ownab
 ## Test
 To run the test, run
 
-forge test
+`forge test`
+
 Tests use [Foundry: Forge](https://github.com/gakonst/foundry).
 
 Install Foundry using the installation steps in the README of the linked repo.
