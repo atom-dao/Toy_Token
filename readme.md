@@ -4,6 +4,7 @@ Toy Token contract that utilizes [OpenZeppelin's ERC20, ERC20SnapShot, and Ownab
 
 ## Test
 `clone the repo`
+`cd/ToyToken`
 
 To run the test, run
 
@@ -17,7 +18,7 @@ Install Foundry using the installation steps in the README of the linked repo.
 
 ```bash
 # go to the contract directory
-cd/src
+cd/ToyToken/src
 copy the `ToyToken.sol` contract
 ```
 go to [Remix](https://remix.ethereum.org/#optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.7+commit.e28d00a7.js)
