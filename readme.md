@@ -15,10 +15,8 @@ Install Foundry using the installation steps in the README of the linked repo.
 ```bash
 # go to the contract directory
 cd/src
-
 copy the `ToyToken.sol` contract
-
+```
 go to [Remix](https://remix.ethereum.org/#optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.7+commit.e28d00a7.js)
 create a new contract file abd paste the 'ToyToken.sol' contract;
 pass in the `vesting contract address` and deploy the contract.
-```
