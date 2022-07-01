@@ -22,10 +22,12 @@ contract ToyToken is ERC20, Ownable, ERC20Snapshot {
 
     //function to get snapshotId so that we can check the total supply at snapshot.
     //use totalSupplyAt method to check the balance at the time of the particular snapshot.
+    //Only owner can run this function
     function getCurrentSnapShot() public view onlyOwner returns(uint256) {
         return _getCurrentSnapshotId();
     }
 
+    //this function is used for snapshot purposes.
     function _beforeTokenTransfer(address from, address to, uint256 amount)
         internal
         override(ERC20, ERC20Snapshot)
