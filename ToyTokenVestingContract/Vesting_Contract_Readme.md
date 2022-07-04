@@ -19,6 +19,6 @@
 
         - After deployment transfer ToyToken to the Vesting Contract
 
-        - Then approve the contract to spend the token
+        - approve the vesting contract to spend the token
 
     ```
