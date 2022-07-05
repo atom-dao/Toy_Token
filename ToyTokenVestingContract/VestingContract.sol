@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 pragma solidity 0.8.13;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
@@ -26,7 +27,7 @@ contract ToyTokenVestingContract is Ownable {
 
     /**
     * @dev Sets the ToyToken Contract address
-    * Vesting period starts immediately on contract deployment
+    * Vesting period starts immediately on contract
     */
     constructor(address _toyTokenAddress){
         ToyToken = IERC20(_toyTokenAddress);
@@ -52,7 +53,7 @@ contract ToyTokenVestingContract is Ownable {
      * Can only be called by the current owner.
      */
     function withDrawTokens() external onlyOwner returns(bool){
-        if(ToyToken.balanceOf(address(this)) = 0){
+        if(ToyToken.balanceOf(address(this)) == 0){
            revert VestEmpty();
         }
         uint amount = getTokenAllowedToWithdraw();
