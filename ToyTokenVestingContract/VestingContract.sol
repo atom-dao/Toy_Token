@@ -19,13 +19,14 @@ contract ToyTokenVestingContract is Ownable {
      /// @notice Total period which token will be vested
     uint256 public TotalVestingPeriod;
 
-    error TokenReleaseComplete();
+    error VestEmpty();
 
     event ToyTokenReleased(uint amount);
 
 
     /**
     * @dev Sets the ToyToken Contract address
+    * Vesting period starts immediately on contract deployment
     */
     constructor(address _toyTokenAddress){
         ToyToken = IERC20(_toyTokenAddress);
@@ -47,12 +48,12 @@ contract ToyTokenVestingContract is Ownable {
 
      /**
      * @dev function to withdraw tokens.
-     * On first call withdraws 10% of the totalSupply of ToyToken. 
+     * On first call withdraws 10% of the totalSupply of ToyToken.
      * Can only be called by the current owner.
      */
     function withDrawTokens() external onlyOwner returns(bool){
-        if(ToyToken.balanceOf(address(this)) <= 0){
-           revert TokenReleaseComplete();
+        if(ToyToken.balanceOf(address(this)) = 0){
+           revert VestEmpty();
         }
         uint amount = getTokenAllowedToWithdraw();
         ToyToken.approve(_msgSender(),amount);
