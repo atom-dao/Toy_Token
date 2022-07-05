@@ -27,7 +27,7 @@ contract Vesting is Ownable {
         require(_token != address(0), "please provide a valid address");
         toy_token = IERC20(_token);
         initialClaim = false;
-        duration = 2 minutes;
+        duration = 1 days;
         checkpoint = block.timestamp;
         VestingPeriod = checkpoint + 90 days;
     }
