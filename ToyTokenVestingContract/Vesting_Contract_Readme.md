@@ -17,8 +17,10 @@
 
         - and then click on deploy.
 
-        - After deployment transfer ToyToken to the Vesting Contract
+        - After deployment transfer ToyToken to the Vesting Contract address
 
         - approve the vesting contract to spend the token
 
+        Note that token to be released are compounded. 0.0115740740740740 ToyToken are released per second, which accumulated to 1000 ToyToken per day. 
+        - if don't withdraw token for 5 days, the total token be withdraw will be compounded. That is you will be able to withdraw 5000 ToyToken;
     ```
