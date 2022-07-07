@@ -12,8 +12,7 @@ more about this is mentioned in the toy_token.md file
 - These tokens are vested over a period of 3 months starting from July 1, 2022.
 - 10% of total supply released on day 1 (on deploying the contract)
 - For the following 90 days, 1% of the total supply is released every day.
-- the token contract is ownable and  so release all these tokens to the address that deploys the contract. 
-
+- the token contract is ownable and so release all these tokens to the address that deploys the contract. 
 
 keep in mind 
 - these locking periods and code accordingly.
