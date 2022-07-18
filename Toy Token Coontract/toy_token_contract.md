@@ -14,3 +14,8 @@ Steps to run it on remix:
 -  2] Copy the deployed contract address from remix and paste it in address.
 -  3] It will automatically identify the name of the token, i.e. "TOY" and decimals, i.e. 18.
 -  4] then click on import tokens.
+
+- Testnet Token Creation - [https://mumbai.polygonscan.com/address/0x66394533e556868c2c7efe7c8f1c14056d47f7a0](url)
+    OR
+- Go to https://mumbai.polygonscan.com/
+- And search this address - 0x66394533E556868C2c7eFe7C8F1C14056D47F7a0
